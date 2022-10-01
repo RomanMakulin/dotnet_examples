@@ -1,13 +1,10 @@
 ﻿// Выяснить является ли число чётным
 
-int A = 3;
-
-if (A % 2 == 0)
+int A = 2;
+string result = "Число четное";
+if (A % 2 != 0)
 {
-Console.Write("Число - четное");
+result = "Число не четное";
 }
 
-else
-{
-Console.Write("Число - не четное");
-}
+Console.Write(result);
