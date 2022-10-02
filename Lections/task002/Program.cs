@@ -20,7 +20,7 @@ void PrintArray(int[] col) // Печатаем новый массив
     }
 }
 
-int IndexOf(int[] collection, int find)
+int IndexOf(int[] collection, int find) // Находим позицию числа
 {
     int count = collection.Length;
     int index = 0;
