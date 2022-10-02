@@ -40,8 +40,6 @@ int IndexOf(int[] collection, int find) // Находим позицию чис�
 int[] array = new int[10]; // новый массив 10 элементов
 
 FillArray(array);
-array[4] = 4;
-array [2] = 4;
 PrintArray(array);
 Console.WriteLine();
 
