@@ -7,22 +7,36 @@
 // Вводим число с клавиатуры
 int Input(string text)
 {
-    Console.WriteLine(text);
+    Console.Write(text);
     int number = int.Parse(Console.ReadLine());
     return number;
 }
 
 // Расчетная часть
-
-int Digit(int number)
+int Number(int number)
 {
-    int value = number / 10^number * 10^3;
-    int result1 = value / 10;
-    int result2 = result1 % 10;
 
-    Console.WriteLine($"Третья цифра числа = {result2}");
-    return result2;
+if (number < 100)
+{
+   Console.WriteLine("Третьей цифры в числе нет."); 
+}
+
+    while (number > 100)
+{
+    if (number > 999)
+    {
+        number = number / 10;
+    }
+    
+    else
+    {
+       number = number % 10; 
+       Console.WriteLine($"Третья цифра числа = {number}");
+
+    }
+}
+    return number;
 }
 
 int number = Input("Введите число = ");
-Digit(number);
+Number(number);
