@@ -34,6 +34,7 @@ int Math(int[] collection, int sum)
         sum += collection[index];
         index++;
     }
+    Console.WriteLine($"Сумма элементов массива = {sum}");
     return sum;
 }
 int sum = 0;
@@ -41,6 +42,5 @@ int[] array = new int[4];
 FillArray(array);
 PrintArray(array);
 Console.WriteLine();
-
 int sum1 = Math(array, sum);
-Console.WriteLine($"Сумма элементов массива = {sum1}");
+
