@@ -36,9 +36,10 @@ new Random().Next(min,max) – случайные числа рандомные
 void - не возвращает 
 return - возвращает
 FillArray - заполняет массив void FillArray(int[] name)
-Convert.ToInt - конвертировать строку в число
 int number = int.Parse(Console.ReadLine()); - считывать заданное число (ввод с клавиатуры) со строки
+int N = Convert.ToInt32(Console.ReadLine()); - считывать заданное число со строки
 Найти цифру от числа number % 10
+Convert.ToInt32(Math.Pow(число, степень)) - возвести в степень
 ************************************************************
 
 # 2 лекция
