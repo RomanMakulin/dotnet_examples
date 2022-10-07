@@ -33,19 +33,16 @@ int KolVo(int[] collection, int chet, int nechet)
             chet += index;
             index++;
         }
-
         else
         {
             nechet += index;
             index++;
         }
-        
     }
     Console.WriteLine($"Количество четных элементов: {chet} ");
     Console.WriteLine($"Количество не четных элементов: {nechet} ");
     return chet;
 }
-
 int chet = 0;
 int nechet = 0;
 int[] array = new int[3];
