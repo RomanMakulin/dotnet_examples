@@ -8,7 +8,7 @@ int Input(string text)
     int number = Convert.ToInt32(Console.ReadLine());
     return number;
 }
-    
+
 // Расчетная часть (проверка на палиндром), 
 // используя перевод числа в строку
 
@@ -23,14 +23,14 @@ int String(int number)
     {
         string numberText = number.ToString();
 
-    if(numberText[0] == numberText[4] && numberText[1] == numberText[3])
-    {
-    Console.WriteLine("Число является палиномом");
-    }
-    else
-    {
-    Console.WriteLine("Число не является палиномом");
-    }
+        if (numberText[0] == numberText[4] && numberText[1] == numberText[3])
+        {
+            Console.WriteLine("Число является палиномом");
+        }
+        else
+        {
+            Console.WriteLine("Число не является палиномом");
+        }
     }
     return number;
 }

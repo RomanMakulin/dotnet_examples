@@ -6,7 +6,7 @@ void FillArray(int[] collection)
     int count = collection.Length;
     while (index < count)
     {
-        collection[index] = new Random().Next(0,6);
+        collection[index] = new Random().Next(0, 6);
         index++;
     }
 }
@@ -18,7 +18,7 @@ void PrintArray(int[] collection)
     while (index < count)
     {
         Console.Write("  " + collection[index]);
-        index ++;
+        index++;
     }
 }
 

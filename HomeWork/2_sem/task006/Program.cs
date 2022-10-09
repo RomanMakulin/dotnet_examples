@@ -16,25 +16,25 @@ int Input(string text)
 int Number(int number)
 {
 
-if (number < 100)
-{
-   Console.WriteLine("Третьей цифры в числе нет."); 
-}
+    if (number < 100)
+    {
+        Console.WriteLine("Третьей цифры в числе нет.");
+    }
 
     while (number > 100)
-{
-    if (number > 999)
     {
-        number = number / 10;
-    }
-    
-    else
-    {
-       number = number % 10; 
-       Console.WriteLine($"Третья цифра числа = {number}");
+        if (number > 999)
+        {
+            number = number / 10;
+        }
 
+        else
+        {
+            number = number % 10;
+            Console.WriteLine($"Третья цифра числа = {number}");
+
+        }
     }
-}
     return number;
 }
 
