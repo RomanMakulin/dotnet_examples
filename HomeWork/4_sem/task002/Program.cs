@@ -7,7 +7,7 @@ int input(string text)
     int number = Convert.ToInt32(Console.ReadLine());
     return number;
 }
-int sum(int number)
+int sum(string text, int number)
 {
     int result = 0;
     while (number > 0)
@@ -15,8 +15,8 @@ int sum(int number)
         result += number % 10;
         number = number / 10;
     }
-    Console.Write(result);
+    Console.Write(text + result);
     return result;
 }
 int number = input("Введите число = ");
-sum(number);
+sum("Сумма элементов числа = ", number);
