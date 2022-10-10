@@ -11,12 +11,8 @@ int InputNumber(string text)
 }
 int VvodStepen(string text, int number, int stepen, int result)
 {
-    int index = 0;
-    while (index < stepen)
-    {
-        result = result * number;
-        index++;
-    }
+
+    for (int index = 0; index < stepen; index++)result = result * number;
     Console.WriteLine(text + result);
     return number;
 }
