@@ -22,31 +22,32 @@ void PrintArray(int[] collection)
         index++;
     }
 }
-int KolVo(int[] collection, int chet, int nechet)
+int Kolvo(int[] collection, int chet, int nechet)
 {
-    int index = 0;
-    int count = collection.Length;
-    while (index < count)
+    int number = 0;
+    int number1 = 0;
+    for (int index = 0; index < collection.Length; index++)
     {
         if (collection[index] % 2 == 0)
         {
-            chet += index;
-            index++;
+            number++;
+            chet = number;
         }
         else
         {
-            nechet += index;
-            index++;
+            number1++;
+            nechet = number1;
         }
     }
-    Console.WriteLine($"Количество четных элементов: {chet} ");
-    Console.WriteLine($"Количество не четных элементов: {nechet} ");
-    return chet;
+    Console.WriteLine($"Количество четных элементов = {chet}. Нечетных = {nechet}");
+    return number;
 }
+
 int chet = 0;
 int nechet = 0;
-int[] array = new int[3];
+int[] array = new int[6];
 FillArray(array);
 PrintArray(array);
 Console.WriteLine();
-KolVo(array, chet, nechet);
+Kolvo(array, chet, nechet);
+
