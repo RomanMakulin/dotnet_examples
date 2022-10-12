@@ -17,15 +17,28 @@ void FillArray(int[] collection)
 void PrintArray(int[] collection)
 {
     for (int i = 0; i < collection.Length; i++) Console.Write(" " + collection[i]);
-}
-int Repeat(int[] collection, int number)
+}//                                          0 1 2 3 4 5
+int Repeat(int[] collection, string text, int number) //  2 1 2 5 1 5
 {
+    int result = 0;
     for (int i = 0; i < collection.Length; i++)
     {
-        if (collection[i] == collection[i])
+        for (int j = 0; j < collection.Length; j++)
         {
-            number = collection[i];
+            if (collection[i] == collection[j])
+            {
+                result = collection[i] + collection[j];
+            }
+            Console.WriteLine(text, collection[i], result);
         }
-        if (number == number)
+
     }
+    return result;
 }
+
+
+int result = 0;
+int[] array = new int[5];
+FillArray(array);
+PrintArray(array);
+Repeat(array, $"Число , повторяется {result} раз", result);
