@@ -21,16 +21,11 @@ void PrintArray(int[] collection)
 int Repeat(int[] collection, string text, int number) //  2 1 2 5 1 5
 {
     int result = 0;
+    int number1 = 0;
     for (int i = 0; i < collection.Length; i++)
     {
-        for (int j = 0; j < collection.Length; j++)
-        {
-            if (collection[i] == collection[j])
-            {
-                result = collection[i] + collection[j];
-            }
-            Console.WriteLine(text, collection[i], result);
-        }
+       number == collection[i];
+       
 
     }
     return result;
