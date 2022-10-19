@@ -42,7 +42,7 @@ void Filter(int[,] array)
             }
             int temp = array[i, j];
             array[i, j] = max;
-            max = temp;
+            array[i, index] = temp;
             System.Console.Write($"{array[i, j]} \t");
         }
         System.Console.WriteLine();
