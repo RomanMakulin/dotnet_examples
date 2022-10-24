@@ -39,15 +39,15 @@ int[] MaxSumString(int[,] array, int sum) // Считаем сумму кажд�
     }
     return MaxArray;
 }
-int MaxStringIndex(int[] array, int result) // Вычисление максимального значения
+int MinStringIndex(int[] array, int result) // Вычисление минимального значения
 {
-    int max = 0;
-    max = array[0];
+    int min = 0;
+    min = array[0];
     for (int i = 0; i < array.Length; i++)
     {
-        if (array[i] > max)
+        if (array[i] < min)
         {
-            max = array[i];
+            min = array[i];
             result = i;
         }
     }
@@ -55,10 +55,10 @@ int MaxStringIndex(int[] array, int result) // Вычисление максим
     return result;
 }
 
-int max = 0, sum = 0;
+int min = 0, sum = 0;
 int[,] array = new int[7, 3];
 FillArray(array); PrintArray(array);
 System.Console.WriteLine();
 int[] array2 = MaxSumString(array, sum);
-System.Console.Write("Номер строчки с максимальной суммой элементов (начиная с 0): ");
-MaxStringIndex(array2, max);
+System.Console.Write("Номер строчки с минимальной суммой элементов (начиная с 0): ");
+MinStringIndex(array2, min);
