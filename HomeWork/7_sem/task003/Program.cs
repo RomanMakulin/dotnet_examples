@@ -17,17 +17,15 @@ void PrintArray(int[,] array)
 }
 void ResultMatrixC(int[,] A, int[,] B)
 {
-    int m = A.GetLength[0];
-    int[,] C = new int [A.GetLength[0], B.GetLength[1]];
-    for (int i = 0; i < array.GetLength(0); i++)
+    int m = A.GetLength(0);
+    int n = A.GetLength(1);
+    int[,] C = new int[m, n];
+    for (int i = 0; i < m; i++)
     {
-        for (int j = 0; j < array.GetLength(1); j++) 
+        for (int j = 0; j < n; j++)
         {
-            for (int k = 0; k < array.GetLength(1); k++) 
-            {
-                C[i, j] += A[i, k] * B[k, j];
-                System.Console.WriteLine($"{C[i, j]} \t");
-            }
+            for (int k = 0; k < n; k++) C[i, j] += A[i, k] * B[k, j];
+            System.Console.Write($"{C[i, j]} \t");
         }
         System.Console.WriteLine();
     }
@@ -42,3 +40,5 @@ PrintArray(array1);
 System.Console.WriteLine("Матрица B:");
 PrintArray(array2);
 System.Console.WriteLine();
+System.Console.WriteLine("Результирующая матрица A x B = C ");
+ResultMatrixC(array1, array2);
