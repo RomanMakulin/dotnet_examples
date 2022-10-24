@@ -31,8 +31,8 @@ void ResultMatrixC(int[,] A, int[,] B)
     }
 }
 
-int[,] array1 = new int[2, 2];
-int[,] array2 = new int[2, 2];
+int[,] array1 = new int[3, 3];
+int[,] array2 = new int[3, 3];
 FillArray(array1);
 FillArray(array2);
 System.Console.WriteLine("Матрица A:");
