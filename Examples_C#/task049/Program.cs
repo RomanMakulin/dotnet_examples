@@ -16,17 +16,17 @@ void PrintArray(int[,] array)
 }
 void MaxSumString(int[,] array)
 {
+        int sum = 0;
     int[] ArrayString = new int[array.GetLength(1)];
     int min = ArrayString[0];
     for (int i = 0; i < array.GetLength(0); i++)
     {
-        int sum = 0;
         for (int j = 0; j < array.GetLength(1); j++)
         {
             sum += array[i, j];
         ArrayString[i] = sum;
         }
-        for (int k = 0; k < ArrayString.Length; k++)
+ 
     System.Console.WriteLine(sum);
     }
 }
