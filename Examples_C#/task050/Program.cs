@@ -23,32 +23,12 @@ int[] ToOneMassiv(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            newArr[i] = array[i, j];
-            System.Console.Write($"{newArr[i]}  ");
+            
         }
     }
     return newArr;
 }
-void Frequency(int[] OneMassiv)
-{
-    int m = 1;
-    int[] NewArray = new int[OneMassiv.Length];
-    for (int i = 0; i < OneMassiv.Length; i++)
-    {
-        for (int k = i + 1; k < OneMassiv.Length; k++)
-        {
-            if (OneMassiv[i] == OneMassiv[k])
-            {
-                m = m + 1;
-                System.Console.WriteLine($"кол-во повторений числа {OneMassiv[i]}: {m}");
-            }
-            else
-            {
-                System.Console.WriteLine($"кол-во повторений числа {OneMassiv[i]}: {m}");
-            }
-        }
-    }
-}
+
 
 System.Console.Write("Введите размер массива (количество рядов): ");
 int sizeA = Convert.ToInt32(Console.ReadLine());
@@ -60,5 +40,4 @@ FillArray(array);
 PrintArray(array);
 System.Console.WriteLine();
 ToOneMassiv(array);
-System.Console.WriteLine();
-Frequency(ToOneMassiv(array));
+
